@@ -68,6 +68,20 @@ export const cvData = {
         "Waste Water Management (YMER 2022)",
         "Defects in Concrete (IJRAR 2023)",
       ],
+      journals: [
+        "Soft Computing in Dispatching Schedules (IJRTE)",
+        "Optimizing logistics for Ready Mix Concrete",
+        "Cost-effective Waste Water Management Systems",
+        "Recent trends in Eco-friendly Concrete technology",
+        "Impact of soft computing on heavy equipment dispatching"
+      ],
+      conferences: [
+        "International Conference on Advances in RMC (2019)",
+        "Smart Concrete Logistics (NCTR Best Paper 2019)",
+        "Sustainable Construction Practices at National Level",
+        "Emerging Trends in Civil Engineering (SPPU Convocation)",
+        "Soft Computing Workshop on Genetic Algorithms"
+      ]
     },
     guiding: "Pravin Chate (PCB Slag in Concrete, since 2023)",
     vivaChair: "Multiple (e.g., Akshy Barkale 2023)",

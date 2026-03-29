@@ -7,8 +7,10 @@ import { motion, AnimatePresence } from 'framer-motion';
 export default function VisitorCounter() {
   const [totalViews, setTotalViews] = useState<number>(0);
   const [liveViews, setLiveViews] = useState<number>(5);
+  const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
+    setMounted(true);
     // 1. Persist/Update Total Views in LocalStorage
     const stored = localStorage.getItem('pccoe_dr_views');
     const initial = stored ? parseInt(stored) : 1245842; // Millions capable seed
@@ -24,8 +26,10 @@ export default function VisitorCounter() {
     return () => clearInterval(interval);
   }, []);
 
+  if (!mounted) return null;
+
   return (
-    <div className="fixed top-8 right-8 z-[200] flex flex-col items-end gap-3 pointer-events-none sm:pointer-events-auto">
+    <div className="fixed bottom-8 right-8 z-[200] flex flex-col items-end gap-3 pointer-events-none sm:pointer-events-auto">
       {/* Total Views (Gold Reel Style) */}
       <motion.div 
         initial={{ opacity: 0, x: 20 }}
