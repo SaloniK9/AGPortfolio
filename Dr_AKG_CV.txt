@@ -1,0 +1,76 @@
+Dr. Ajay Krishnath Gaikwad
+Ph.D. (Civil), M.Tech. (CM), B.E. (Civil), LM QCFI-049903118057, LM IEI AM094123-1
+Email: ajay.gaikwad@pccoepune.org
+Cell: +91 9822406840, 7420995740
+Res. Address: Swaraaj Avenue, Flat 604, S.B. Patil School Road, Ravet, Pune 412102
+Date of Birth: 10th June 1977 (Age: 49 years as of Feb 2026)
+
+Current Positions:
+- Professor & HoD, Civil Engineering Department, PCCoE Pune (since May 2024, 1+ year)
+- Professor, Civil Engineering (since Nov 2022, 2+ years)
+- Former Associate Dean, Student Development & Welfare (July 2020 - May 2024, 4 years)
+- PhD Research Guide, Savitribai Phule Pune University (since Aug 2022)
+- Former PG Coordinator, Civil-Construction Management (Jun 2019 - 2024, 5 years)
+
+PhD Details:
+- Completed: 15/09/2020
+- Guide: Dr. S.B. Thakare (DYPIoT Pimpri & APCoE Parvati)
+- Title: Dispatching Schedule Optimization for Ready Mix Concrete (PGSPhD319)
+- Abstract: Focuses on optimizing RMC truck dispatching using soft computing, GA, GPS for uninterrupted schedules, minimizing wait times.
+- Keywords: RMC Optimization, GA for RMC, GPS in RMC.
+
+Academic Qualifications:
+- PhD Civil: DY Patil COE Pimpri, SPPU (2015-2020)
+- M.Tech CM: COE Pune (2014, 8.10 CGPA, 2nd rank)
+- B.E. Civil: WIT Solapur (1998, 73.05%, 2nd rank)
+- HSC: DBFCO Solapur (1994, 64%)
+- SSC: Kuchan HS Solapur (1992, 66%)
+
+Total Experience: 27 Years (Teaching: 24.5 Years, Industrial/R&D: 2.5 Years)
+
+Teaching Positions at PCCoE Pune (23+ years):
+- HoD (May 2024 - present)
+- Professor (Nov 2022 - present, 3.5 years)
+- Associate Prof (Jul 2016 - Oct 2022, 6 years)
+- Asst Prof (Jul 2014 - Jun 2016, 2 years)
+- Sr Lecturer (Aug 2008 - Jun 2014, 6 years)
+- Lecturer (Jul 2002 - Jul 2008, 6 years)
+Earlier: Lecturer at Dr. V.V. Patil COE Ahmadnagar (Feb 2002 - Jul 2002, 4 months)
+
+Industrial/R&D:
+- Design Engineer, Structon Project Consultant, Solapur (Oct 1999 - Feb 2001, 1.5 years)
+- Jr Research Fellow, DRDO RnDE Dighi Pune (Jan-Sep 1999, 9 months)
+- Site Engineer, Sanjay Bhansali Construction, Solapur (Jul-Oct 1998, 4 months)
+
+Subjects Taught: Basic Civil Engg, Engg Mechanics, SOM, Surveying, TQM, MIS in Civil, Construction Mgmt, etc. (FE to ME level)
+
+Outstanding Achievements:
+- 2nd Rank BE (WIT Solapur 1998), M.Tech (COE Pune)
+- GATE 2002 (AIR 3842), 2006 (AIR 2439)
+- MPSC 2013 Mains, PGCET 2013-14 qualified
+- AVISHKAR 2016 Univ level; Guided state 2nd (2017), state winner (2018 DiScO for RMC)
+- Best Paper NCTR2019
+- Patents: 3 provisional (RMC Optimizer 2015, Survey Area Calc 2015, PET Concrete 2018)
+- Copyrights: 3 (RMC Dispatching, etc.)
+- Books: Engineering Mechanics (Nirali Prakashan, 2019/2023)
+- Funding: JRF DRDO (1999), BCUD SPPU Rs1L (2016), ATAL Rs2L (2021), PCERF Rs3.45L (2023-24)
+- Resource Person: 30+ (NBA, BoS, Interviews, FDPs, Session Chair, PhD Viva, etc.)
+- YouTube: 39 videos, 1600 subs, 1.9L views (Engg Mechanics/Surveying)
+
+Research Guidance:
+- Guiding: Pravin Chate (PCB Slag in Concrete, since 2023)
+- PhD Viva Chairman/Examiner: Multiple (e.g., Akshy Barkale 2023)
+
+Publications (Scopus/SCI: 7; Book Ch:1; Int J:12+; Conf:8+):
+- Genetic Algo RMC Dispatch (IJRTE 2019, Scopus IF5.92)
+- App for RMC Trucks (IJITEE 2019, Scopus IF5.54)
+- Waste Water Mgmt (YMER 2022 IF0.10), etc.
+- Full list in DOC; recent: Defects in Concrete (IJRAR 2023 IF7.17)
+
+Projects Guided (UG:12+, PG:10+): Prefab, GPS Tracking, Eco Concrete, RMC Feasibility, Lightweight Concrete, etc. (Many with papers/awards)
+
+Memberships: LM IEI, ISTE, QCFI; Chartered Engineer
+Skills: C/C++, MATLAB/GA, Data Structures
+
+
+YouTube Channel: https://www.youtube.com/channel/UCzggPV5gezmNMKmenzi1nYA (39 videos, 1600+ subscribers, 1.9L views on Engg Mechanics & Surveying)

@@ -1,88 +1,78 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Merriweather:wght@400;700&display=swap');
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-  --pccoe-deep-blue: #1A237E;
-  --pccoe-mid-blue: #283593;
-  --pccoe-accent: #3949AB;
-  --pccoe-gold: #F9A825;
-  --pccoe-light: #E8EAF6;
-  --pccoe-text: #1A237E;
+  --foreground-rgb: 31, 41, 55; /* gray-800 */
+  --background-start-rgb: 255, 255, 255;
+  --background-end-rgb: 249, 250, 251; /* gray-50 */
+  --pccoe-blue: #1A237E;
+  --pccoe-red: #B71C1C;
+  --pccoe-gold: #FFD700;
 }
 
-* {
-  box-sizing: border-box;
+@layer base {
+  body {
+    @apply text-gray-700 bg-white antialiased selection:bg-blue-100 selection:text-pccoe-blue;
+    font-family: 'Roboto', 'Arial', sans-serif;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-bold tracking-tight text-pccoe-blue;
+  }
 }
 
+@layer components {
+  .section-white {
+    @apply bg-white py-24 px-6 md:px-12 lg:px-24;
+  }
+  
+  .section-gray {
+    @apply bg-[#f8f9fa] py-24 px-6 md:px-12 lg:px-24;
+  }
+
+  .clean-card {
+    @apply bg-white rounded-2xl shadow-lg border border-gray-100 transition-all duration-300 hover:scale-[1.03] hover:shadow-2xl hover:border-blue-200/50 hover:ring-1 hover:ring-blue-100;
+  }
+
+  .gold-card {
+    @apply bg-white rounded-2xl shadow-lg border-l-4 border-pccoe-gold transition-all duration-300 hover:scale-[1.05] hover:shadow-2xl hover:bg-amber-50/10;
+  }
+
+  .nav-link {
+    @apply px-4 py-2 text-sm font-bold text-gray-600 hover:text-pccoe-blue transition-colors relative;
+  }
+
+  .nav-link.active {
+    @apply text-pccoe-blue after:content-[''] after:absolute after:bottom-0 after:left-4 after:right-4 after:h-0.5 after:bg-pccoe-blue;
+  }
+}
+
+/* Scroll behavior */
 html {
   scroll-behavior: smooth;
 }
 
-body {
-  font-family: 'Inter', sans-serif;
-  background-color: #F0F2F9;
-  color: #1e2a4a;
+/* Animations */
+.fade-up {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.6s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
-/* ── News Ticker ── */
-@keyframes ticker-scroll {
-  0%   { transform: translateX(100%); }
-  100% { transform: translateX(-100%); }
-}
-.ticker-track {
-  display: inline-block;
-  white-space: nowrap;
-  animation: ticker-scroll 28s linear infinite;
-}
-.ticker-track:hover { animation-play-state: paused; }
-
-/* ── Pulse dot ── */
-@keyframes pulse-dot {
-  0%, 100% { opacity: 1; transform: scale(1); }
-  50%       { opacity: 0.5; transform: scale(1.4); }
-}
-.pulse-dot { animation: pulse-dot 1.4s ease-in-out infinite; }
-
-/* ── Card hover lift ── */
-.card-lift {
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
-}
-.card-lift:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 12px 32px rgba(26, 35, 126, 0.15);
+.fade-up.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
-/* ── Gradient badge ── */
-.badge-gold {
-  background: linear-gradient(135deg, #F9A825 0%, #FFD740 100%);
-  color: #1A237E;
-  font-weight: 700;
+/* Skeleton wave */
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
 }
 
-/* ── Stat counter ── */
-@keyframes count-up {
-  from { opacity: 0; transform: translateY(8px); }
-  to   { opacity: 1; transform: translateY(0); }
+.skeleton {
+  background: linear-gradient(90deg, #f0f0f0 25%, #f8f8f8 50%, #f0f0f0 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
 }
-.stat-animate {
-  animation: count-up 0.6s ease both;
-}
-
-/* ── Section heading underline ── */
-.section-heading::after {
-  content: '';
-  display: block;
-  width: 48px;
-  height: 4px;
-  background: linear-gradient(90deg, #F9A825, #1A237E);
-  border-radius: 2px;
-  margin-top: 6px;
-}
-
-/* ── Scrollbar ── */
-::-webkit-scrollbar { width: 6px; }
-::-webkit-scrollbar-track { background: #E8EAF6; }
-::-webkit-scrollbar-thumb { background: #3949AB; border-radius: 3px; }
