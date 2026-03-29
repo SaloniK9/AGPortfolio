@@ -616,7 +616,7 @@ export default function Home() {
         <div className="container mx-auto flex flex-col md:flex-row justify-between items-center gap-12">
            <div className="flex items-center gap-6">
               <div className="w-16 h-16 bg-white rounded-3xl p-3 flex items-center justify-center">
-                <Image src="/pccoe_logo.jpg" alt="Logo" width={30} height={30} />
+                <Image src="/pccoe _logo.jpg" alt="Logo" width={30} height={30} />
               </div>
               <div>
                 <h4 className="text-0.5xl font-black text-white uppercase tracking-tighter">Dr. Ajay Gaikwad</h4>
