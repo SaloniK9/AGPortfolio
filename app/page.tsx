@@ -27,6 +27,7 @@ import Image from "next/image";
 import { useState, useEffect, useRef } from "react";
 import ContactForm from "@/components/ContactForm";
 import VisitorCounter from "@/components/VisitorCounter";
+import AcademicProfiles from "@/components/AcademicProfiles";
 
 // Utility for Count Up Animation
 const useCountUp = (end: number, duration: number = 2000) => {
@@ -431,6 +432,56 @@ export default function Home() {
         </div>
       </section>
 
+      {/* 🚀 Academic Profiles Section */}
+      <section id="profiles" className="bg-[#f8f9fa] py-16 md:py-24 px-6 md:px-12">
+        <div className="container mx-auto">
+          <div className="flex flex-col items-center mb-12 md:mb-16 text-center">
+            <h2 className="text-3xl md:text-5xl lg:text-6xl font-black text-pccoe-blue uppercase tracking-tighter mb-4">Academic Profiles</h2>
+            <p className="text-gray-500 font-bold uppercase tracking-widest text-[10px] md:text-xs">Scholarly presence across major research platforms</p>
+          </div>
+          <AcademicProfiles
+            items={[
+              {
+                title: "Google Scholar",
+                href: "https://scholar.google.com/citations?user=3XrzNLwAAAAJ",
+                description: "Research publications, citations, and academic impact",
+                icon: "GraduationCap",
+              },
+              {
+                title: "Scopus",
+                href: "https://www.scopus.com/authid/detail.uri?authorId=57210729258",
+                description: "Author profile and indexed scholarly contributions",
+                icon: "BookOpen",
+              },
+              {
+                title: "Web of Science",
+                href: "https://www.webofscience.com/",
+                description: "Researcher ID: PLC-9843-2026",
+                icon: "BadgeCheck",
+              },
+              {
+                title: "ORCID",
+                href: "https://orcid.org/0000-0002-2412-6308",
+                description: "Persistent researcher identity and profile",
+                icon: "Briefcase",
+              },
+              {
+                title: "LinkedIn",
+                href: "https://www.linkedin.com/in/ajay-gaikwad-20b32b19b",
+                description: "Professional network and academic collaboration",
+                icon: "Linkedin",
+              },
+              {
+                title: "Primary Email",
+                href: "mailto:ajaygaikwad@pccoepune.org",
+                description: "Direct academic and institutional correspondence",
+                icon: "Mail",
+              },
+            ]}
+          />
+        </div>
+      </section>
+
       {/* 🚀 Projects Section (#projects) */}
       <section id="projects" className="bg-[#f8f9fa] py-16 md:py-24 px-6 md:px-12">
         <div className="container mx-auto">
@@ -469,11 +520,11 @@ export default function Home() {
               <div className="h-1 w-20 md:w-24 bg-pccoe-gold/50 rounded-full mx-auto md:mx-0" />
             </div>
             <div className="space-y-6 md:space-y-8">
-              {[{ ic: Mail, t: "Academic Correspondence", v: cvData.profile.email }, { ic: MapPin, t: "Campus Location", v: "Sector 26, Nigdi, Pune" }].map((c, i) => (
-                <div key={i} className="flex items-start gap-4 md:gap-6 group text-left">
+              {[{ ic: Mail, t: "Primary Email", v: "ajaygaikwad@pccoepune.org", href: "mailto:ajaygaikwad@pccoepune.org" }, { ic: Mail, t: "Secondary Email", v: "gaikwadajay@gmail.com", href: "mailto:gaikwadajay@gmail.com" }, { ic: MapPin, t: "Campus Location", v: "Sector 26, Nigdi, Pune" }].map((c, i) => (
+                <a key={i} href={c.href || "#contact"} target={c.href?.startsWith("mailto:") ? "_self" : undefined} className="flex items-start gap-4 md:gap-6 group text-left">
                   <div className="w-10 h-10 md:w-14 md:h-14 rounded-2xl md:rounded-3xl bg-white/5 border border-white/10 flex items-center justify-center shrink-0 group-hover:bg-pccoe-gold/20 transition-all"><c.ic className="text-white" size={20} /></div>
                   <div><p className="text-white/40 font-black uppercase tracking-widest text-[8px] mb-1">{c.t}</p><p className="text-base md:text-xl font-bold text-white group-hover:text-pccoe-gold transition-colors">{c.v}</p></div>
-                </div>
+                </a>
               ))}
             </div>
             <div className="w-full aspect-video rounded-[2rem] md:rounded-[3rem] overflow-hidden border border-white/10 shadow-3xl bg-white/5 opacity-80 hover:opacity-100 transition-opacity">
@@ -499,9 +550,11 @@ export default function Home() {
               <p className="text-gray-500 font-bold uppercase tracking-widest text-[8px] md:text-[9px] mt-1">HoD Civil Engineering • PCCoE Pune</p>
             </div>
           </div>
-          <div className="flex gap-6 md:gap-10">
-            <a href={cvData.profile.socials.youtube} className="p-3 md:p-4 bg-white/5 rounded-full text-white hover:bg-pccoe-gold hover:text-pccoe-blue transition-all"><Youtube size={20} /></a>
-            <a href={`mailto:${cvData.profile.email}`} className="p-3 md:p-4 bg-white/5 rounded-full text-white hover:bg-white hover:text-black transition-all"><Mail size={20} /></a>
+          <div className="flex flex-wrap justify-center gap-4 md:gap-6">
+            <a href={cvData.profile.socials.youtube} target="_blank" rel="noreferrer" className="p-3 md:p-4 bg-white/5 rounded-full text-white hover:bg-pccoe-gold hover:text-pccoe-blue transition-all"><Youtube size={20} /></a>
+            <a href="mailto:ajaygaikwad@pccoepune.org" className="p-3 md:p-4 bg-white/5 rounded-full text-white hover:bg-white hover:text-black transition-all"><Mail size={20} /></a>
+            <a href="https://www.linkedin.com/in/ajay-gaikwad-20b32b19b" target="_blank" rel="noreferrer" className="p-3 md:p-4 bg-white/5 rounded-full text-white hover:bg-pccoe-gold hover:text-pccoe-blue transition-all"><svg viewBox="0 0 24 24" className="h-5 w-5" fill="currentColor"><path d="M6.94 8.5A1.56 1.56 0 1 0 6.94 5.38a1.56 1.56 0 0 0 0 3.12ZM5.5 9.5h2.88V18H5.5zM10.28 9.5h2.76v1.16h.04c.38-.72 1.32-1.48 2.72-1.48 2.91 0 3.45 1.92 3.45 4.41V18h-2.88v-7.45c0-1.77-.03-4.05-2.47-4.05-2.47 0-2.85 1.93-2.85 3.92V18H10.28z" /></svg></a>
+            <a href="https://orcid.org/0000-0002-2412-6308" target="_blank" rel="noreferrer" className="p-3 md:p-4 bg-white/5 rounded-full text-white hover:bg-pccoe-gold hover:text-pccoe-blue transition-all"><svg viewBox="0 0 24 24" className="h-5 w-5" fill="currentColor"><path d="M7.5 6.5A1.5 1.5 0 1 0 7.5 9.5a1.5 1.5 0 0 0 0-3ZM6 10.5h3V18H6zM10.5 10.5h3v1.1h.04c.42-.8 1.44-1.65 2.96-1.65 3.2 0 3.8 2.1 3.8 4.84V18h-3v-6.84c0-1.63-.03-3.73-2.27-3.73-2.28 0-2.63 1.78-2.63 3.6V18h-3z" /></svg></a>
           </div>
         </div>
         <div className="mt-16 md:mt-20 pt-10 border-t border-white/5 text-center">

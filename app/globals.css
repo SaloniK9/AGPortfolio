@@ -3,9 +3,9 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 31, 41, 55; /* gray-800 */
+  --foreground-rgb: 31, 41, 55;
   --background-start-rgb: 255, 255, 255;
-  --background-end-rgb: 249, 250, 251; /* gray-50 */
+  --background-end-rgb: 249, 250, 251;
   --pccoe-blue: #1A237E;
   --pccoe-red: #B71C1C;
   --pccoe-gold: #FFD700;
@@ -13,12 +13,16 @@
 
 @layer base {
   body {
-    @apply text-gray-700 bg-white antialiased selection:bg-blue-100 selection:text-pccoe-blue;
+    @apply text-slate-700 bg-white antialiased selection:bg-blue-100 selection:text-pccoe-blue;
     font-family: 'Roboto', 'Arial', sans-serif;
   }
-  
+
   h1, h2, h3, h4, h5, h6 {
     @apply font-bold tracking-tight text-pccoe-blue;
+  }
+
+  a {
+    @apply transition-colors duration-200;
   }
 }
 
@@ -26,46 +30,33 @@
   .section-white {
     @apply bg-white py-24 px-6 md:px-12 lg:px-24;
   }
-  
+
   .section-gray {
     @apply bg-[#f8f9fa] py-24 px-6 md:px-12 lg:px-24;
   }
 
   .clean-card {
-    @apply bg-white rounded-2xl shadow-lg border border-gray-100 transition-all duration-300 hover:scale-[1.03] hover:shadow-2xl hover:border-blue-200/50 hover:ring-1 hover:ring-blue-100;
+    @apply rounded-[1.75rem] shadow-[0_16px_40px_rgba(15,23,42,0.06)] border border-slate-100 transition-all duration-300 hover:scale-[1.01] hover:shadow-[0_24px_70px_rgba(15,23,42,0.09)] hover:border-blue-200/60;
   }
 
   .gold-card {
-    @apply bg-white rounded-2xl shadow-lg border-l-4 border-pccoe-gold transition-all duration-300 hover:scale-[1.05] hover:shadow-2xl hover:bg-amber-50/10;
-  }
-
-  .nav-link {
-    @apply px-4 py-2 text-sm font-bold text-gray-600 hover:text-pccoe-blue transition-colors relative;
-  }
-
-  .nav-link.active {
-    @apply text-pccoe-blue after:content-[''] after:absolute after:bottom-0 after:left-4 after:right-4 after:h-0.5 after:bg-pccoe-blue;
+    @apply rounded-[1.75rem] shadow-[0_16px_40px_rgba(15,23,42,0.06)] border-l-4 border-pccoe-gold transition-all duration-300 hover:scale-[1.02] hover:shadow-[0_24px_70px_rgba(15,23,42,0.09)] hover:bg-amber-50/70;
   }
 }
 
-/* Scroll behavior */
 html {
   scroll-behavior: smooth;
 }
 
-/* Animations */
-.fade-up {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: all 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+body {
+  overflow-x: hidden;
 }
 
-.fade-up.visible {
-  opacity: 1;
-  transform: translateY(0);
+::selection {
+  background: rgba(26, 35, 126, 0.14);
+  color: #0f172a;
 }
 
-/* Skeleton wave */
 @keyframes shimmer {
   0% { background-position: -200% 0; }
   100% { background-position: 200% 0; }

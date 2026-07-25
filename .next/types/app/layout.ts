@@ -1,4 +1,4 @@
-// File: C:\Users\salon\OneDrive\문서\websites\agprotfolio\agportfolio\app\layout.tsx
+// File: C:\Users\salon\OneDrive\문서\websites\AGPortfolio\app\layout.tsx
 import * as entry from '../../../app/layout.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
